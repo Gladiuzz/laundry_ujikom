@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_outlet">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:background="@color/bg_Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icn_package"
+            android:layout_width="98dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="34dp"
+            app:srcCompat="@drawable/ic_laundry_shop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@id/icn_package"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Outlet"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="324dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="168dp"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="Enter the Form below to add Outlet"
+                android:textAlignment="center"
+                android:textColor="@color/bg_Primary"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/outlet_nama"
+                android:layout_width="272dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/txt_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:hint="Enter Outlet Name"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/bg_Primary"
+                android:textColorHint="@color/bg_Primary"
+                android:paddingLeft="19dp"
+                android:background="@drawable/border_gray"
+                android:drawableLeft="@drawable/ic_laundry_shop3"
+                android:drawablePadding="15dp"/>
+
+            <EditText
+                android:id="@+id/alamat_outlet"
+                android:layout_width="272dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/outlet_nama"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:hint="Enter Address"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/bg_Primary"
+                android:textColorHint="@color/bg_Primary"
+                android:paddingLeft="19dp"
+                android:background="@drawable/border_gray"
+                android:drawableLeft="@drawable/ic_location_on_main_24dp"
+                android:drawablePadding="15dp"/>
+
+            <EditText
+                android:id="@+id/telephone_outlet"
+                android:layout_width="272dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/alamat_outlet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:hint="Enter Phone Number"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/bg_Primary"
+                android:textColorHint="@color/bg_Primary"
+                android:paddingLeft="19dp"
+                android:background="@drawable/border_gray"
+                android:drawableLeft="@drawable/ic_local_phone_main_24dp"
+                android:drawablePadding="15dp" />
+
+            <Button
+                android:id="@+id/btn_submit10"
+                android:layout_width="272dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:text="Submit"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textAllCaps="false"
+                android:background="@drawable/border_main_100"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

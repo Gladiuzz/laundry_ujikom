@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_package">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:background="@color/bg_Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icn_package"
+            android:layout_width="98dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="34dp"
+            app:srcCompat="@drawable/ic_fashion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@id/icn_package"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Laundry Package"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="324dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="168dp"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/enter_form"
+                android:textAlignment="center"
+                android:textColor="@color/bg_Primary"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/nama_paket"
+                android:layout_width="272dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/txt_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:hint="Enter Package Name"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/bg_Primary"
+                android:textColorHint="@color/bg_Primary"
+                android:paddingLeft="19dp"
+                android:background="@drawable/border_gray"
+                android:drawableLeft="@drawable/ic_towel"
+                android:drawablePadding="15dp"/>
+
+            <EditText
+                android:id="@+id/Harga_paket"
+                android:layout_width="272dp"
+                android:layout_height="39dp"
+                android:layout_below="@id/nama_paket"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:hint="Enter Package Price"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/bg_Primary"
+                android:textColorHint="@color/bg_Primary"
+                android:paddingLeft="19dp"
+                android:background="@drawable/border_gray"
+                android:drawableLeft="@drawable/ic_attach_money_main_24dp"
+                android:drawablePadding="15dp"/>
+
+            <RelativeLayout
+                android:id="@+id/all_rb"
+                android:layout_below="@id/Harga_paket"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
+
+                <RelativeLayout
+                    android:id="@+id/ly_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rb_1"
+                        android:layout_width="51dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/border_white_main">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_blanket"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_selimut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selimut"
+                        android:textSize="11sp"
+                        android:textColor="@color/bg_Primary"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/rb_1"/>
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/ly_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/ly_1">
+
+                    <RelativeLayout
+                        android:id="@+id/rb_2"
+                        android:layout_width="51dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/border_white_main">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_blanket" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_kiloan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rb_2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:text="Selimut"
+                        android:textColor="@color/bg_Primary"
+                        android:textSize="11sp" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_3"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ly_2">
+
+                    <RelativeLayout
+                        android:id="@+id/rb_3"
+                        android:layout_width="51dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/border_white_main">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_blanket"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_karpet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selimut"
+                        android:textSize="11sp"
+                        android:textColor="@color/bg_Primary"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/rb_3"/>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/hah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_rb"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_selimut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_kiloan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_centerHorizontal="true" />
+                <RadioButton
+                    android:id="@+id/rb_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_submit1"
+                android:layout_width="272dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:text="Submit"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textAllCaps="false"
+                android:background="@drawable/border_main_100"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

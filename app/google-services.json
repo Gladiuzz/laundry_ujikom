@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854830380643",
+    "firebase_url": "https://laundry-ujikom.firebaseio.com",
+    "project_id": "laundry-ujikom",
+    "storage_bucket": "laundry-ujikom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854830380643:android:82f48372d0cb3826326a56",
+        "android_client_info": {
+          "package_name": "com.example.laundry_ujikom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854830380643-g5vgdg8v4kecs1pqeclkd9ct9ou98ggf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWfjpTNAzFWFOlW8Jb-49QUC_lxaT5MTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854830380643-g5vgdg8v4kecs1pqeclkd9ct9ou98ggf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

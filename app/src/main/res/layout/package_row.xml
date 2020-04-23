@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_package"
+    android:layout_width="331dp"
+    android:layout_height="89dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="15dp"
+    app:cardElevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/lyt_img"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/border_main"
+            android:layout_marginStart="20dp">
+            
+            <ImageView
+                android:id="@+id/icn_jenis"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_fashion"/>
+
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/laundry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Laundry"
+            android:textSize="16sp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/bg_Primary"
+            android:layout_toEndOf="@id/lyt_img"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/laundry_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Laundry"
+            android:textSize="9sp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/bg_Primary"
+            android:layout_toEndOf="@id/lyt_img"
+            android:layout_below="@id/laundry_name"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/laundry_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="harga Laundry"
+            android:textSize="12sp"
+            android:textColor="@color/bg_Primary"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="11dp"/>
+
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

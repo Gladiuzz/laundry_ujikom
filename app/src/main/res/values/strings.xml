@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Premium Laundry</string>
+    <string name="Home">Home</string>
+    <string name="Package">Laundry Package</string>
+    <string name="Outlet">Outlet</string>
+    <string name="Users">Users</string>
+    <string name="Transaction">Transaction</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="enter_form">Enter the form below to add Laundry Package</string>
+    <string name="enter_form_user">Enter the form below to add user</string>
+    <string-array name="Gender_Customer">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="status_transaski">
+        <item>baru</item>
+        <item>proses</item>
+        <item>selesai</item>
+        <item>diambil</item>
+    </string-array>
+    <string-array name="status_bayar">
+        <item>dibayar</item>
+        <item>belum_dibayar</item>
+    </string-array>
+    <string-array name="role">
+        <item>Kasir</item>
+        <item>Admin</item>
+        <item>Owner</item>
+    </string-array>
+</resources>

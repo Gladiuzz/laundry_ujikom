@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laundry_ujikom">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".laundry_transaksi"></activity>
+        <activity android:name=".edit_transaction" />
+        <activity android:name=".create_transaction" />
+        <activity android:name=".create_customer" />
+        <activity android:name=".laundry_customer" />
+        <activity android:name=".create_outlet" />
+        <activity android:name=".create_user" />
+        <activity android:name=".Laundry_user" />
+        <activity android:name=".Laundry_Outlet" />
+        <activity android:name=".Outlet_create" />
+        <activity android:name=".register3" />
+        <activity android:name=".register2" />
+        <activity android:name=".kasir_home" />
+        <activity android:name=".edit_package" />
+        <activity android:name=".Register" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".create_package" />
+        <activity android:name=".Laundry_package" />
+        <activity android:name=".home" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
