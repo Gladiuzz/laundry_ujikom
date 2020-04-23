@@ -66,7 +66,7 @@ public class PackageAdapter extends RecyclerView.Adapter<PackageAdapter.PackageV
 
         switch (laundryCurrent.jenis){
             case "Kiloan":
-                Glide.with(mcontext).load(R.drawable.tanjirou).into(holder.jenis_img);
+                Glide.with(mcontext).load(R.drawable.ic_basket).into(holder.jenis_img);
                 break;
             case "Selimut":
                 Glide.with(mcontext).load(R.drawable.ic_blanket).into(holder.jenis_img);
